@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./clock.component.scss'],
 })
 export class ClockComponent implements OnInit {
-  time: Date = new Date();
+  time = new Date();
 
   constructor() {
     setInterval(() => {
@@ -15,4 +15,12 @@ export class ClockComponent implements OnInit {
   }
 
   ngOnInit(): void {}
+
+  formatHoursTo12(): number {
+    return this.time.getHours() % 12 || 12;
+  }
+
+  formatAmPm(): string {
+    return this.time.getHours() < 12 ? 'AM' : 'PM';
+  }
 }

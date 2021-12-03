@@ -3,7 +3,7 @@
   width: 100vw;
   height: 100vh;
   grid-template-columns: 100%;
-  grid-template-rows: 25% 50% 25%;
+  grid-template-rows: 10% 1fr 10%;
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas:
@@ -16,11 +16,15 @@
   grid-area: clockHeader;
 }
 
-.clock {
-  grid-area: clockBody;
+.clock-container {
+  height: 100%;
+  width: 100%;
   justify-self: center;
   align-self: center;
-  font-size: 15rem;
+  background-image: url("/assets/img/round_logo-512x512.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 
 .footer-img {

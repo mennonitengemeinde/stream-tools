@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ClockComponent } from './pages/clock/clock.component';
+import { ClockPageComponent } from './pages/clock-page/clock-page.component';
 
-const routes: Routes = [{ path: '', component: ClockComponent }];
+const routes: Routes = [{ path: '', component: ClockPageComponent }];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
